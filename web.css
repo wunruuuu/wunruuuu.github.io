@@ -1,0 +1,603 @@
+
+.body{
+    width: 1080px;
+}
+.whole{
+    color: white;
+    font-size: 30px;
+    max-width:1080px;
+    
+    
+}
+@media screen and (max-width:400px) { 
+ 
+   
+}
+#web_title{
+    font-family: 微軟正黑體;
+    font-size:5vw;
+    /*padding-top: 70px; */
+    text-align: center;
+     /* 絕對定位 */
+    position: absolute;
+  
+     /* 水平與垂直定位 */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#AboutMe{
+    /*padding-top: 70px; */
+    text-align: center;
+     /* 絕對定位 */
+    position: absolute;
+  
+     /* 水平與垂直定位 */
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+   
+}
+/*btn link*/
+.aboutBtn a, .nextBtn a{
+    text-decoration:none;
+    color: #6e7a67;
+}
+.aboutBtn a:hover,.nextBtn a:hover{
+    text-decoration:none;
+    color:#ffff;
+}
+/*btn */
+.aboutBtn:hover,.nextBtn:hover{
+    background-color:#6e7a67;
+}
+.aboutBtn,.nextBtn{
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 500px;
+    border:0.5px;
+    align-items: center;
+}
+
+
+#intro{
+    max-width: 950px;
+    text-align: center;
+    padding-top: 5%;
+     /* 絕對定位 */
+    position: absolute;
+     /* 水平與垂直定位 */
+    left: 50%;
+    top:180%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+}
+
+#introContent{
+    width:60%;
+    text-align: center;
+    font-size: 2vw;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25%;
+    margin-top:5%;
+}
+#introContent2{
+    width:40%;
+    text-align: center;
+    flex-direction: row;
+}
+#introContent2 img{
+    max-width: 170%;
+}
+#next{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width:100%;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%);
+}
+#project{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    padding-top: 20%; 
+    text-align: center;
+     /* 絕對定位 */
+    position: absolute;
+  
+     /* 水平與垂直定位 */
+    left: 50%;
+    top:300%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-decoration:none;
+    width:100%;
+}
+#projectTitle{
+    color: #6e7a67;
+    width: 100%;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 8vw;
+    position: absolute;
+    /* 水平與垂直定位 */
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+#programming,#design,#interactive{
+    flex-direction:row;
+    width:30%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size:5vw;
+    align-items: center;
+    justify-content:center; /*垂直置中*/
+    text-align: center;
+    
+}
+#programming a,#design a,#interactive a{
+    flex-direction: row;
+    width:30%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content:center; /*垂直置中*/
+    text-decoration:none;
+    color:white;
+}
+
+#programming:hover,#design:hover,#interactive:hover{
+    font-size: 7vw;
+    flex-direction: row;
+    width:30%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content:center; /*垂直置中*/
+
+}
+#codingProject{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 70%;
+    left: 50%;
+    top: 550%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+#cpDescription,#cpDescription2,#intDescription,#intDescription2,#intDescription3,#desDescription,#desDescription2{
+    font-size: 1.5vw;
+    width:53%;
+    flex-direction: row;
+    padding-right: 100px;
+   /* overflow:auto; */
+   margin-top: 7%;
+    
+}
+#cpDescription b,#cpDescription2 b,#intDescription b,#intDescription2 b,#intDescription3 b,#desDescription b,#desDescription2 b{
+    color: #6e7a67;
+    font-size: 3vw;
+    font-style: oblique;
+
+}
+#video1,#video2, #video3,#video4,#video5,#video6,#video7{
+    width:47%;
+    font-size: 1vw;
+    text-align: center;
+    justify-content:center; 
+    flex-direction: row;
+    padding-right: 50px;
+    align-items: center;
+    max-width: 47%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+#codingProject2{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 70%;
+    left: 50%;
+    top: 650%;
+    transform: translate(-50%, -50%);
+    display: flex;
+   
+}
+
+#interactiveProject{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 70%;
+    left: 50%;
+    top: 750%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+#interactiveProject2{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 70%;
+    left: 50%;
+    top: 850%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+#interactiveProject3{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 70%;
+    left: 50%;
+    top: 950%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+#designProject{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 70%;
+    left: 50%;
+    top: 1150%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+#designProject2{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 70%;
+    left: 50%;
+    top: 1250%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.backBtn{
+    height: 10vw;
+    width: 10vw;
+    font-size: 1.5vw;
+    border-radius: 10vw;
+    border:0px;
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+.backBtn a,.backBtn a:hover{
+    text-decoration:none;
+    color:#6e7a67;
+}
+#FOOTER {
+    font-size: 15px;
+    position: absolute;
+    top: 1350%;
+    background-color:#6e7a67;
+    width:100%;
+    height:170px;
+    text-align: center;
+    padding:2%;
+    line-height: 30px ;
+}
+
+
+/* for phone watchin*/
+/* for phone watchin*/
+/* for phone watchin*/
+/* for phone watchin*/
+
+@media screen and (max-width:450px) { 
+ @viewport{
+    initial-scale: 1;
+    maximum-scale:1;
+    minimum-scale:1;
+ }
+.body{
+    width: 950px;
+}
+.whole{
+    color: white;
+    font-size: 30px;
+    max-width:950px;
+    
+    
+}
+
+#web_title{
+    font-family: 微軟正黑體;
+    font-size:8vw;
+    width:100%;
+    /*padding-top: 70px; */
+    text-align: center;
+     /* 絕對定位 */
+    position: absolute;
+  
+     /* 水平與垂直定位 */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#AboutMe{
+    /*padding-top: 70px; */
+    text-align: center;
+     /* 絕對定位 */
+    position: absolute;
+  
+     /* 水平與垂直定位 */
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+   
+}
+/*btn link*/
+.aboutBtn a, .nextBtn a{
+    text-decoration:none;
+    color: #6e7a67;
+}
+.aboutBtn a:hover,.nextBtn a:hover{
+    text-decoration:none;
+    color:#ffff;
+}
+/*btn */
+.aboutBtn:hover,.nextBtn:hover{
+    background-color:#6e7a67;
+}
+.aboutBtn,.nextBtn{
+    font-size: 6vw;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 500px;
+    border:0.5px;
+    align-items: center;
+}
+
+
+#intro{
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding-top: 5%;
+     /* 絕對定位 */
+    position: absolute;
+     /* 水平與垂直定位 */
+    left: 50%;
+    top:180%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+#introContent{
+    width:95%;
+    text-align: center;
+    font-size: 5vw;
+    flex-direction: column;
+    display: block;
+    align-items: center;
+    padding-top: 10%;
+    margin-left: 10%;
+    margin-right: 13%;
+
+}
+#introContent2{
+    width:25%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+#introContent2 img{
+    max-width: 400%;
+}
+#next{
+    font-size: 10vw;
+    position: absolute;
+    /* 水平與垂直定位 */
+    width:100%;
+    left: 50%;
+    top: 105%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+}
+#project{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 8vw;
+    padding-top: 20%; 
+    text-align: center;
+     /* 絕對定位 */
+    position: absolute;
+  
+     /* 水平與垂直定位 */
+    left: 50%;
+    top:300%;
+    transform: translate(-50%, -50%);
+    display: block;
+    text-decoration:none;
+}
+#projectTitle{
+    color: #6e7a67;
+    width: 100%;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 12vw;
+    position: absolute;
+    /* 水平與垂直定位 */
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+#programming,#design,#interactive{
+    flex-direction:column;
+    width:50%; 
+    margin-top: 35%;
+    margin-left: 20%;
+    font-size:10vw;
+    align-items: center;
+    justify-content:center; /*垂直置中*/
+    text-align: center;
+    
+}
+#programming a,#design a,#interactive a{
+    flex-direction: row;
+    width:30%; 
+    margin-left: 25%;
+    justify-content:center; /*垂直置中*/
+    text-decoration:none;
+    color:white;
+}
+
+#programming:hover,#design:hover,#interactive:hover{
+    font-size: 7vw;
+    flex-direction: row;
+    width:30%; 
+    margin-left: 25%;
+    align-items: center;
+    justify-content:center; /*垂直置中*/
+
+}
+#codingProject{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 100%;
+    left: 50%;
+    top: 550%;
+    transform: translate(-50%, -50%);
+    display: block;
+    
+}
+
+#cpDescription,#cpDescription2,#intDescription,#intDescription2,#intDescription3,#desDescription,#desDescription2{
+    font-size: 5vw;
+    width:100%;
+    flex-direction: column;
+    margin-top:5%;
+    margin-left: 13%;
+    margin-right: 13%;
+    text-align: center;
+   /* overflow:auto; */
+    
+}
+#cpDescription b,#cpDescription2 b,#intDescription b,#intDescription2 b,#intDescription3 b,#desDescription b,#desDescription2 b{
+    color: #6e7a67;
+    font-size: 6vw;
+    font-style: oblique;
+
+}
+#video1, #video2, #video3,#video4,#video5{
+    width:85%;
+    
+    justify-content:center; 
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#video6,#video7{
+
+    width:80%;
+    justify-content:center; 
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 17%;
+    margin-right: 8%;
+
+}
+#codingProject2{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 90%;
+    left: 50%;
+    top: 650%;
+    transform: translate(-50%, -50%);
+    display: block;
+   
+}
+
+#interactiveProject{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 90%;
+    left: 50%;
+    top: 850%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+#interactiveProject2{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 90%;
+    left: 50%;
+    top:1000%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+#interactiveProject3{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 90%;
+    left: 50%;
+    top: 1150%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+#designProject{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 90%;
+    left: 50%;
+    top: 1300%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+#designProject2{
+    position: absolute;
+    /* 水平與垂直定位 */
+    width: 90%;
+    left: 50%;
+    top: 1400%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.backBtn{
+    height: 20vw;
+    width: 20vw;
+    font-size: 2vw;
+    border-radius: 10vw;
+    border:0px;
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+.backBtn a,.backBtn a:hover{
+    text-decoration:none;
+    color:#6e7a67;
+}
+#FOOTER {
+    font-size: 15px;
+    position: absolute;
+    top: 1550%;
+    background-color:#6e7a67;
+    width:100%;
+    height:170px;
+    text-align: center;
+    padding:2%;
+    line-height: 30px ;
+}
+
+
+   
+}
+

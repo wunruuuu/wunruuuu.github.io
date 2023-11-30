@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=1">
+    <link href="web.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <script src="_js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>
+         $(document).ready(function() {
+           
+            $("#web_title").hide();
+            $(".aboutBtn").hide();
+            $(".nextBtn").hide();
+            $(".backBtn").hide();
+            $("#web_title").fadeIn(5000);
+
+         var counter = 0;
+            var interval = setInterval(function() {
+            counter++;
+            if (counter == 2) {                    
+                $(".aboutBtn").slideDown(1000);
+                $(".nextBtn").slideDown(1000);
+                clearInterval(interval);
+             }
+            }, 1000);
+
+            $(".nextBtn").click(function(){
+                $(".backBtn").fadeIn(2000);
+            });
+
+   
+         });
+    </script>
+
+</head>
+<body style="background-color:#95a48b;">
+    <div class="whole">
+
+        <div id="web_title">          
+            Hello, I'm 李汶儒                               
+        </div>   
+        <div id="AboutMe">           
+            <center><button class="aboutBtn"><a href="#intro">About me</a></button></center>
+        </div>
+
+        <div id="intro">
+            
+            <div id="introContent2">
+                <img id="me" src="./photo/me.JPG" width="250 px"alt="一張圖片">
+            </div>
+            <div id="introContent">
+              您好，我是李汶儒，
+              <br>
+              現年22歲。
+              <br>
+              畢業於元智大學資訊傳播系科技組。
+              <br>
+              我是一個很好相處的人，喜歡團隊合作，<br>而樂於溝通、理性客觀是我的特質。
+          </div>
+            <div id="next">
+                <center><button class="nextBtn"><a href="#project">Next</a></button></center>
+            </div>
+        </div>
+
+        <div id="project">
+            <div id="projectTitle">
+                Portfolio
+            </div> 
+            <div id="programming">
+                <a href="#codingProject" >Coding</a>
+            </div>
+
+            <div id="interactive">
+                <a href="#interactiveProject" >Interactive</a> 
+            </div>
+
+            <div id="design">
+                <a href="#designProject" >Design</a>
+            </div>
+            
+        </div>
+
+        <div id="codingProject">
+            <div id="cpDescription">
+                <b>We Got Art (Coding)</b>
+                
+                <br>
+                <br>
+                透過javascript撰寫，運用jQuery語法呈現動態網頁之效果。
+                <br>
+                <br>
+                網頁介紹:
+                <br>
+                歐洲名畫畫廊網頁，在網頁上以幻燈片的模式觀看各畫家的畫作，及查看畫家相關資訊。
+                <br>
+                <br>
+                我負責的部分:
+                <br>
+                首頁、手繪Q版畫家、部分動態效果
+    
+            </div>
+            <div id="video1">
+              <a href="https://youtu.be/2N6Dgt8rfxI" title="測試超連結"><img src="./coding/we got art.jpg" width="300" border="0"></a> 
+              <br>
+                 <p> (點選圖片可看作品影片)</p>
+            </div>
+        </div>   
+        <div id="codingProject2">
+            <div id="cpDescription2">
+                <b>Fallen Kitties (Coding)</b>
+                <br>
+                <br>
+                javascript撰寫，運用Phaser框架。
+                <br>
+                <br>
+                遊戲介紹:
+                <br>
+                想製作一款輕鬆休閒可愛的遊戲，於是發想到接從天而降的貓咪這個點子。
+                <br>
+                <br>
+                我負責的部分:
+                <br>
+                遊戲menu及貓咪圖鑑呈現
+            </div>
+            <div id="video2">
+              <a href="https://youtu.be/WoUBaFO8VqM" title="測試超連結"><img src="./coding/fallen kitten.png" width="300" border="0"></a> 
+              <p> (點選圖片可看作品影片)</p>
+            </div>   
+            
+
+        </div>
+        
+        
+        <div id="interactiveProject">
+            <div id="intDescription">
+                <b>用心眼視-畢業製作 (Interactive)</b>
+                <br>
+                <br>
+                運用Unity建造場景，再透過steam連接VR裝置，
+                <br>
+                <br>
+                內容介紹:
+                <br>
+                我們想利用過去幾年所學，做出一個能對社會有所貢獻的作品，因此我們做了一個能讓體驗者透過VR眼鏡體會視障者的視覺，使其親身體驗視障者的世界，並引導反思自己是否漠視視障族群，也期許體驗後能主動去幫助視障者。
+                <br>
+                <br>
+                我負責的部分:
+                <br>
+                心聲場景建置、音效、整體企劃
+            </div>
+            <div id="video3">
+              <a href="https://youtu.be/ICvD5hiV0Y0" title="測試超連結"><img src="./coding/center-01.png" width="300" border="0"></a> 
+              <p> (點選圖片可看作品影片)</p>
+            </div>    
+        </div>
+
+        <div id="interactiveProject2">
+            <div id="intDescription2">
+                <b>X Plan (Interactive)</b>
+                <br>
+                <br>
+                將led燈組成X的形狀，並透過Arduino板控制5種變化效果:<br>
+                從上而下、前後變換、繞外框、繞圈、雨點落下
+                
+                <br>
+                <br>
+                內容介紹:
+                <br>
+                X表示＂未知＂、＂無限＂，我們對未來的看法就是一切未知，一切無限可能，因此想以X為主體做光立方的造型。
+                <br>
+                <br>
+                我負責的部分:
+                <br>
+                焊接、程式撰寫、效果設計
+            </div>
+            <div id="video4">
+              <a href="https://youtu.be/JtPvmzzBi-A" title="測試超連結"><img src="./coding/x plan.jpg" width="300" border="0"></a> 
+              <p> (點選圖片可看作品影片)</p>
+            </div>    
+        </div>
+
+        <div id="interactiveProject3">
+            <div id="intDescription3">
+                <b>跳舞出奇蛋 (Interactive)</b>
+                <br>
+                <br>
+                 跳舞機的箭頭每個都是獨立的電路，踩下箭頭的值為1，未踩則為0，Arduino會不斷傳值至Unity，透過Unity程式判斷是否成功得分，最後將總分會傳至扭蛋機的Arduino板，判斷分數等級，自動調出相應的扭蛋。
+                <br>
+                <br>
+                內容介紹:
+                <br>
+                將跳舞機結合扭蛋、跳舞機之分數分別為三個等級；而不同等級分別可領取3、2、1顆扭蛋。
+                <br>
+                <br>
+                我負責的部分:
+                <br>
+                撰寫Unity接收Arudino傳來的值之程式、跳舞機本體製作
+            </div>
+            <div id="video5">
+              <a href="https://youtu.be/Mgk9kDQFJEQ" title="測試超連結"><img src="./coding/start.jpg" width="300" border="0"></a> 
+              <p> (點選圖片可看作品影片)</p>
+            </div>    
+        </div>
+
+
+        <div id="designProject">
+                <div id="desDescription">
+                    <b>實習美編 (Design)</b>
+                    <br>
+                    <br>
+                     這些是我2022暑假於倍思親國際有限公司實習時為公司做的商品圖~
+                    <br>
+                    由於公司主要產品為醫療護具，為呈現專業安全的形象，使用的色系偏藍、深色為主；除此之外，設計同時也是盡量能以活潑年輕的樣貌呈現，吸引年輕並且有需要使用護具的族群。
+ 
+                </div>
+                <div id="video6">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active"  data-bs-interval="5000">
+                            <img src="./design/intern design/banner c 1080.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./design/intern design/LB221評價2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./design/intern design/WS224三大特色 C.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./design/intern design/n11.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./design/intern design/核心價值.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./design/intern design/蝦皮產品資訊尺寸穿戴-15.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./design/intern design/護膝feature.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>    
+        </div>
+
+        
+        <div id="designProject2">
+            <div id="desDescription2">
+                <b>設計練習 (Design)</b>
+                <br>
+                <br>
+                 這些圖是參考Pinterest上別人的設計作品後，根據自己喜好增減元素所設計的圖，主要用於培養自己設計的美感。
+            </div>
+            <div id="video7">
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active2"  data-bs-interval="5000">
+                            <img src="./design/practice design/s.jpg" class="d-block w-100" alt="...">
+                          </div>
+                      <div class="carousel-item active">
+                        <img src="./design/practice design/ag.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/bk.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/JM.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/jwoo.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/minnie.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/mk.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/noje.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/WQ.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/qi.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./design/practice design/WD2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                     
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>    
+    </div>
+
+        <div id="back">
+            <center><button class="backBtn"><a href="#project" >Back to Portfolio</a></button></center>
+        </div>
+
+        <div id="FOOTER">
+                Contact Me : <br>
+                maylee900116@gmail.com <br>
+                0920059616
+        </div>
+    </div>
+    
+    
+</body>
+</html> 
+
+
